@@ -5,7 +5,7 @@ import classes from "./QuoteForm.module.css";
 
 interface QuoteFormProps {
   isLoading: boolean;
-  onAddQuote: ({ author, text }: { author: string; text: string }) => {};
+  onAddQuote: ({ author, text }: { author: string; text: string }) => void;
 }
 const QuoteForm = (props: QuoteFormProps) => {
   const authorInputRef = useRef() as MutableRefObject<HTMLInputElement>;
